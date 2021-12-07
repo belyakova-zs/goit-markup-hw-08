@@ -1,0 +1,72 @@
+// Герой
+
+.hero {
+  position: relative;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/Header-img.jpg");
+  background-size: cover;
+  // max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 200px;
+  padding-right: 0;
+  padding-bottom: 200px;
+  padding-left: 0;
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $primary-bg-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.hero {
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent; /*делает бордер прозрачным*/
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    font-family: inherit;
+    font-style: inherit;
+    color: $primary-bg-color;
+    background-color: $accent-color;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color 250ms $cubic, color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}

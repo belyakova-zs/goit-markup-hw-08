@@ -1,0 +1,51 @@
+// Контакты в меню
+
+// .contacts {
+//   display: flex;
+//   justify-content: center;
+//   margin-left: auto;
+//   align-items: center;
+
+//   &__items {
+//     margin-left: 50px;
+//   }
+// }
+
+// .contacts {
+//   &__link {
+//     display: block;
+//     padding-top: 32px;
+
+//     padding-left: 30px;
+
+//     padding-bottom: 32px;
+//     font-style: normal;
+//     text-decoration: none;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.1;
+//     letter-spacing: 0.02em;
+//     color: $primary-text-color;
+//     transition: color 250ms $cubic;
+
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//   }
+// }
+
+// .contacts {
+//   &__icon {
+//     border: 0;
+//     margin-right: 10px;
+//     fill: currentColor;
+//   }
+// }
+
+// .contacts {
+//   &__link--icon-hov {
+//     display: flex;
+//     align-items: center;
+//   }
+// }

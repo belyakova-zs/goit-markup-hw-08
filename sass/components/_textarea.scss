@@ -1,0 +1,18 @@
+textarea {
+  resize: none;
+
+  padding-top: 12px;
+  padding-left: 16px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    transition: border 250ms $cubic;
+  }
+}

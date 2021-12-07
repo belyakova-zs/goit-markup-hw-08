@@ -1,0 +1,54 @@
+// Навигация
+
+// .site-nav {
+//   display: flex;
+//   margin-left: 93px;
+//   &__item {
+//     margin-left: 50px;
+//   }
+// }
+
+// .site-nav {
+//   &__link {
+//     display: block;
+//     text-decoration: none;
+//     color: $title-text-color;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.1;
+//     letter-spacing: 0.02em;
+
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//   }
+// }
+
+// .site-nav {
+//   &__link--current {
+//     display: block;
+//     color: $accent-color;
+//   }
+// }
+
+// подчеркивание на текущей странице
+
+// .site-nav {
+//   &__link--active {
+//     position: relative;
+//     display: block;
+//     text-decoration: none;
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       display: block;
+//       bottom: -190%;
+//       height: 4px;
+//       width: 100%;
+//       background-color: $accent-color;
+//       border-radius: 2px;
+//     }
+//   }
+// }

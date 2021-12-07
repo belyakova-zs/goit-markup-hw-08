@@ -1,0 +1,156 @@
+// Форма
+
+.form {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+.form {
+  &__field {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:hover &__input,
+    &:focus &__input {
+      border: 1px solid $accent-color;
+      transition: border 250ms $cubic;
+    }
+  }
+}
+
+.form {
+  &__label {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+    outline: none;
+  }
+}
+
+.form {
+  &__input {
+    padding-left: 42px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    width: 100%;
+    height: 40px;
+    font-family: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      transition: border 250ms $cubic;
+    }
+  }
+}
+
+.form {
+  &__icon {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transition: fill 250ms $cubic;
+    }
+  }
+}
+.form__icon {
+  .form__input:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.form {
+  &__text {
+    margin-bottom: 30px;
+  }
+}
+
+.form {
+  &__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+  }
+}
+
+.form {
+  &__checkbox {
+    &:checked + &__checkmark {
+      border-color: $accent-color;
+      background-color: $accent-color;
+      background-image: url("../images/icon_check.svg");
+      background-origin: border-box;
+    }
+  }
+}
+
+.form {
+  &__checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 7px;
+    margin-bottom: -2px;
+
+    background-origin: border-box;
+  }
+}
+
+.form {
+  &__link {
+    color: rgba(33, 150, 243, 1);
+  }
+}
+
+.form {
+  &__mailing-button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    background-color: $accent-color;
+    color: $primary-bg-color;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+      transition: background-color 250ms $cubic;
+    }
+  }
+}

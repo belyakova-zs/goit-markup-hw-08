@@ -1,0 +1,219 @@
+//  ФУТЕР
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-section {
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-section {
+  &__logo {
+    color: $accent-color;
+    font-family: $seconadry-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+}
+
+.footer-section {
+  &__logo--white-text {
+    padding: 0;
+    color: $primary-bg-color;
+  }
+}
+
+.footer-section {
+  &__address {
+    margin-top: 20px;
+    padding: 0;
+
+    font-weight: normal;
+    font-style: normal;
+    color: $primary-bg-color;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}
+
+.footer-section {
+  &__address-location {
+    margin: 0 0 9px 0;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-section {
+  &__contact {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms $cubic;
+  }
+}
+
+.footer-section {
+  &__contact {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-section {
+  &__contact {
+    &:hover,
+    &:focus {
+      color: $secondary-bg-color;
+    }
+  }
+}
+
+//  Иконки в подвале
+
+.footer-section {
+  &__icons {
+    margin-left: 70px;
+  }
+}
+
+.footer-section {
+  &__icons-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $secondary-bg-color;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.footer-section {
+  &__list {
+    display: inline-flex;
+  }
+}
+
+.footer-section {
+  &__icons-list {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer-section {
+  &__icons-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $secondary-bg-color;
+    border-radius: 50%;
+    transition: background-color 250ms $cubic;
+  }
+}
+
+.footer-section {
+  &__icons-link {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.footer-section {
+  &__icons-img {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
+//  Рассылка в подвале
+
+.footer-section {
+  &__form {
+    margin-left: auto;
+  }
+}
+
+.footer-section {
+  &__form-title {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+  }
+}
+
+.footer-section {
+  &__form-mailing {
+    padding: 15px 0 15px 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2f303a;
+  }
+}
+
+.footer-section {
+  &__form-button {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-bg-color;
+
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: $accent-color;
+    transition: background-color 250ms $cubic;
+  }
+}
+
+.footer-section {
+  &__form-button {
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}
+
+.footer-section {
+  &__form-icon {
+    margin-left: 10px;
+  }
+}

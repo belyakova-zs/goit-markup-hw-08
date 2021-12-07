@@ -1,0 +1,134 @@
+//  Команда
+
+.thumb {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  text-align: center;
+  background-color: $secondary-bg-color;
+}
+
+.team-section {
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}
+
+.team-section {
+  &__img {
+    margin-left: 30px;
+    max-width: calc((100%-90px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:nth-last-child(4n) {
+      margin-left: 0;
+    }
+  }
+}
+
+.team-section {
+  &__container {
+    padding: 30px 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-top: 0;
+    background-color: $primary-bg-color;
+  }
+}
+
+.team-section {
+  &__position {
+    margin: 0 0 0 0;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+  }
+}
+
+.team-section {
+  &__description {
+    margin: 0 0 0 0;
+
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+  }
+}
+
+.team-section {
+  &__icons {
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 206px;
+  }
+}
+
+.team-section {
+  &__list {
+    margin-right: 10px;
+
+    &:nth-last-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.team-section {
+  &__network-icons {
+    // display: flex;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    fill: $icon-color;
+    border-radius: 50%;
+    transition: background-color 250ms $cubic, fill 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $primary-bg-color;
+      border-radius: 50%;
+    }
+  }
+}

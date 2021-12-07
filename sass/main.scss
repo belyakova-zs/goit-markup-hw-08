@@ -1,0 +1,30 @@
+@import "./utils/variables";
+@import "./base/normolize";
+@import "./base/basic";
+@import "./base/container";
+@import "./base/visually-hidden";
+@import "./components/page-header";
+@import "./components/nav-logo";
+@import "./components/site-nav";
+// @import "./components/contacts";
+@import "./components/hero";
+// @import "./components/backdrop";
+// @import "./components/form";
+// @import "./components/textarea";
+@import "./components/features";
+@import "./components/examples";
+// @import "./components/team-section";
+// @import "./components/customers-section";
+// @import "./components/footer-section";
+// страница ПОРТФОЛИО
+// @import "./components/portfolio-buttons";
+// @import "./components/portfolio-service-section";
+
+// shared \ common
+// имя файла по классу
+// у списков любим сбрасывать паддинги и марджины
+// @extend - % растворяет ненужный общий селектор
+// _placeholders.scss - (@extend) туда можно кинуть все утилиты, то есть общие вещи
+// @mixin имя(параметры) - (@include)
+// @each $var in list - для каждого значения из списка можно что-то сделать
+// (#{$имя переменной}) интерполяция) - помогает не писать 100000 строк
