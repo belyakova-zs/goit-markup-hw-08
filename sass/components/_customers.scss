@@ -44,6 +44,7 @@
     text-align: center;
     margin-bottom: 30px;
 
+    //не встает в два ряда
     @media screen and (min-width: 480px) {
       display: flex;
       flex-wrap: wrap;

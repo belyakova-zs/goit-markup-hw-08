@@ -290,6 +290,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section__title {
   margin-left: auto;
   margin-right: auto;
@@ -308,7 +315,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: aqua;
+  outline: 1px solid blue;
 }
 
 @media screen and (min-width: 480px) {
@@ -745,6 +752,8 @@ img {
 .examples__item {
   position: relative;
   width: 33.3333%;
+  margin-left: 30px;
+  max-width: calc((100%-60px) / 3);
 }
 
 .examples__item:nth-last-child(3n) {
