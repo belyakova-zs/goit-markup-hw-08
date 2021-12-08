@@ -3,9 +3,9 @@
 .features {
   &__icons {
     margin-bottom: 30px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     height: 120px;
     background-color: $secondary-bg-color;
@@ -17,7 +17,7 @@
     margin-bottom: 10px;
 
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
@@ -51,9 +51,7 @@
     text-align: center;
     margin-bottom: 30px;
 
-    outline: 1px solid black;
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
       // flex-basis: 50%;
       flex-basis: calc((100% - 4 * 15px) / 2); //формула для расчета ширины
       margin-right: 15px;
@@ -82,12 +80,12 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
+    text-align: left;
     letter-spacing: 0.03em;
   }
 }
 
-// .icons {
-//   // justify-content: center;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+}

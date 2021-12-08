@@ -41,29 +41,29 @@
           </button>
 
           <!-- Навигация -->
-          <ul class="menu">
-            <li class="menu__item">
+          <ul class="site-nav">
+            <li class="site-nav__item">
               <a
                 href=""
-                class="menu__link menu__link--current menu__link--active"
+                class="
+                  site-nav__link site-nav__link--current site-nav__link--active
+                "
                 >Студия
               </a>
             </li>
 
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Портфолио </a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио </a>
             </li>
 
-            <li class="menu__item">
-              <a href="" class="menu__link">Контакты </a>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты </a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
 
-    <!-- Контакты в меню-->
-    <!-- <ul class="contacts">
+        <!-- Контакты в меню-->
+        <ul class="contacts">
           <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
@@ -89,7 +89,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!-- Уникальный контент страницы -->
     <main>
@@ -326,12 +326,12 @@
       </section>
 
       <!-- Команда -->
-      <!-- <section class="team-section">
+      <section class="team section">
         <div class="container">
-          <h2 class="team-section__title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
 
-          <ul>
-            <li class="team-section__img thumb">
+          <ul class="team__list">
+            <li class="team__item thumb">
               <img
                 srcset="
                   ./images/team-section/desktop-igor@1x.jpg 270w,
@@ -347,37 +347,37 @@
                 width="270"
                 height="260"
               />
-              <div class="team-section__container">
-                <h3 class="team-section__position">Игорь Демьяненко</h3>
-                <p class="team-section__description">Product Designer</p>
+              <div class="team__container">
+                <h3 class="team__position">Игорь Демьяненко</h3>
+                <p class="team__description">Product Designer</p>
 
-                <ul class="team-section__icons">
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                <ul class="team__icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg class="icons" width="20px" height="20px">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg class="icons" width="20px" height="20px">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -386,44 +386,53 @@
                 </ul>
               </div>
             </li>
-            <li class="team-section__img">
+            <li class="team__item thumb">
               <img
-                src="./images/olga.jpg"
+                srcset="
+                  ./images/team-section/desktop-olga@1x.jpg 270w,
+                  ./images/team-section/tablet-olga@1x.jpg  354w,
+                  ./images/team-section/mobile-olga@1x.jpg  450w,
+                  ./images/team-section/desktop-olga@2x.jpg 540w,
+                  ./images/team-section/tablet-olga@2x.jpg  708w,
+                  ./images/team-section/mobile-olga@2x.jpg  900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team-section/mobile-olga@1x.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
               />
-              <div class="team-section__container">
-                <h3 class="team-section__position">Ольга Репина</h3>
-                <p class="team-section__description">Frontend Developer</p>
+              <div class="team__container">
+                <h3 class="team__position">Ольга Репина</h3>
+                <p class="team__description">Frontend Developer</p>
 
-                <ul class="team-section__icons">
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                <ul class="team__icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -432,43 +441,52 @@
                 </ul>
               </div>
             </li>
-            <li class="team-section__img">
+            <li class="team__item thumb">
               <img
-                src="./images/nikolay.jpg"
+                srcset="
+                  ./images/team-section/desktop-nikolay@1x.jpg 270w,
+                  ./images/team-section/tablet-nikolay@1x.jpg  354w,
+                  ./images/team-section/mobile-nikolay@1x.jpg  450w,
+                  ./images/team-section/desktop-nikolay@2x.jpg 540w,
+                  ./images/team-section/tablet-nikolay@2x.jpg  708w,
+                  ./images/team-section/mobile-nikolay@2x.jpg  900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team-section/mobile-nikolay@1x.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
               />
-              <div class="team-section__container">
-                <h3 class="team-section__position">Николай Тарасов</h3>
-                <p class="team-section__description">Marketing</p>
-                <ul class="team-section__icons">
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+              <div class="team__container">
+                <h3 class="team__position">Николай Тарасов</h3>
+                <p class="team__description">Marketing</p>
+                <ul class="team__icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -477,43 +495,52 @@
                 </ul>
               </div>
             </li>
-            <li class="team-section__img">
+            <li class="team__item thumb">
               <img
-                src="./images/mixail.jpg"
+                srcset="
+                  ./images/team-section/desktop-mikhail@1x.jpg 270w,
+                  ./images/team-section/tablet-mikhail@1x.jpg  354w,
+                  ./images/team-section/mobile-mikhail@1x.jpg  450w,
+                  ./images/team-section/desktop-mikhail@2x.jpg 540w,
+                  ./images/team-section/tablet-mikhail@2x.jpg  708w,
+                  ./images/team-section/mobile-mikhail@2x.jpg  900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team-section/mobile-mikhail@1x.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
               />
-              <div class="team-section__container">
-                <h3 class="team-section__position">Михаил Ермаков</h3>
-                <p class="team-section__description">UI Designer</p>
-                <ul class="team-section__icons">
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+              <div class="team__container">
+                <h3 class="team__position">Михаил Ермаков</h3>
+                <p class="team__description">UI Designer</p>
+                <ul class="team__icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="team-section__list">
-                    <a href="" class="team-section__network-icons">
+                  <li class="team__icons-list">
+                    <a href="" class="team__network-icons">
                       <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -524,88 +551,64 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="customers-section">
+      <section class="customers section">
         <div class="container">
-          <h2 class="customers-section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
 
-          <ul>
-            <li class="customers-section__list">
-              <a href="" class="customers-section__link">
-                <svg
-                  class="customers-section__icon"
-                  width="106px"
-                  height="60px"
-                >
+          <ul class="customers__list">
+            <li class="customers__item">
+              <a href="" class="customers__link">
+                <svg class="customers__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#group"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="customers-section__list">
-              <a href="" class="customers-section__link">
-                <svg
-                  class="customers-section__icon"
-                  width="106px"
-                  height="60px"
-                >
+            <li class="customers__item">
+              <a href="" class="customers__link">
+                <svg class="customers__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#group2"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="customers-section__list">
-              <a href="" class="customers-section__link">
-                <svg
-                  class="customers-section__icon"
-                  width="106px"
-                  height="60px"
-                >
+            <li class="customers__item">
+              <a href="" class="customers__link">
+                <svg class="customers__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#group3"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="customers-section__list">
-              <a href="" class="customers-section__link">
-                <svg
-                  class="customers-section__icon"
-                  width="106px"
-                  height="60px"
-                >
+            <li class="customers__item">
+              <a href="" class="customers__link">
+                <svg class="customers__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#group4"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="customers-section__list">
-              <a href="" class="customers-section__link">
-                <svg
-                  class="customers-section__icon"
-                  width="106px"
-                  height="60px"
-                >
+            <li class="customers__item">
+              <a href="" class="customers__link">
+                <svg class="customers__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#group5"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="customers-section__list">
-              <a href="" class="customers-section__link">
-                <svg
-                  class="customers-section__icon"
-                  width="106px"
-                  height="60px"
-                >
+            <li class="customers__item">
+              <a href="" class="customers__link">
+                <svg class="customers__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#group6"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
     <!-- <footer class="footer-section">

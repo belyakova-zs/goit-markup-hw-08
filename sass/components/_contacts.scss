@@ -1,51 +1,55 @@
 // Контакты в меню
 
-// .contacts {
-//   display: flex;
-//   justify-content: center;
-//   margin-left: auto;
-//   align-items: center;
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
 
-//   &__items {
-//     margin-left: 50px;
-//   }
-// }
+  &__items {
+    margin-left: 50px;
+  }
 
-// .contacts {
-//   &__link {
-//     display: block;
-//     padding-top: 32px;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
 
-//     padding-left: 30px;
+.contacts {
+  &__link {
+    display: block;
+    padding-top: 32px;
 
-//     padding-bottom: 32px;
-//     font-style: normal;
-//     text-decoration: none;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.1;
-//     letter-spacing: 0.02em;
-//     color: $primary-text-color;
-//     transition: color 250ms $cubic;
+    padding-left: 30px;
 
-//     &:hover,
-//     &:focus {
-//       color: $accent-color;
-//     }
-//   }
-// }
+    padding-bottom: 32px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    transition: color 250ms $cubic;
 
-// .contacts {
-//   &__icon {
-//     border: 0;
-//     margin-right: 10px;
-//     fill: currentColor;
-//   }
-// }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
 
-// .contacts {
-//   &__link--icon-hov {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
+.contacts {
+  &__icon {
+    border: 0;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.contacts {
+  &__link--icon-hov {
+    display: flex;
+    align-items: center;
+  }
+}
