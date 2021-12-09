@@ -8,9 +8,11 @@
 @import "./components/site-nav";
 @import "./components/contacts";
 @import "./components/hero";
-// @import "./components/backdrop";
-// @import "./components/form";
-// @import "./components/textarea";
+// ---
+@import "./components/backdrop";
+@import "./components/form";
+@import "./components/textarea";
+// ---
 @import "./components/features";
 @import "./components/examples";
 @import "./components/team";
