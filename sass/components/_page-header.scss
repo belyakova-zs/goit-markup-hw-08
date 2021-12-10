@@ -11,6 +11,8 @@
   // position: relative; //контент меню под фото hero и его не видно
 
   &__border {
+    position: relative;
+
     border-bottom: 1px solid $border-bottom-line;
   }
 
@@ -74,7 +76,7 @@
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;

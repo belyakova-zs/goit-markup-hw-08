@@ -1,15 +1,43 @@
 //  ФУТЕР
 
 .footer-section {
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .footer-section {
   &__container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      width: 768px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      width: 1200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
   }
 }
 
@@ -85,24 +113,51 @@
 
 .footer-section {
   &__icons {
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__icons {
+      margin-left: 60px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-section__icons {
+      margin-left: 165px;
+    }
   }
 }
 
 .footer-section {
   &__icons-title {
-    margin-top: 0;
+    margin-top: 60px;
     margin-bottom: 20px;
+    padding: 0;
     color: $secondary-bg-color;
     font-weight: 700;
     line-height: 1.2;
+    font-size: 14px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .footer-section {
   &__list {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 23px;
+      align-items: flex-end;
+    }
   }
 }
 
@@ -146,16 +201,40 @@
 }
 
 //  Рассылка в подвале
+// .follow {
+//   display: block;
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     width: 450px;
+//   }
+// }
 
 .footer-section {
   &__form {
-    margin-left: auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 60px;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
   }
 }
 
 .footer-section {
   &__form-title {
     margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -168,6 +247,7 @@
 .footer-section {
   &__form-mailing {
     padding: 15px 0 15px 16px;
+    margin-bottom: 20px;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -175,6 +255,24 @@
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     background-color: #2f303a;
+
+    // @media screen and (min-width: 480px) {
+    //   width: 450px;
+    // }
+
+    // // @media screen and (min-width: 768px) {
+    // //   width: 768px;
+    // // }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
   }
 }
 
@@ -185,6 +283,7 @@
     text-align: center;
 
     margin-left: 12px;
+    margin-bottom: 60px;
     width: 200px;
     height: 50px;
     font-weight: 700;

@@ -21,7 +21,7 @@
           <a href="./index.html" class="nav__logo">
             Web<span class="nav__logo--black-text">Studio</span></a
           >
-
+          <!-- Переключатель мобильного меню -->
           <button
             type="button"
             class="page-header__menu-button js-open-menu"
@@ -93,7 +93,7 @@
 
     <!-- Уникальный контент страницы -->
     <main>
-      <!-- Обертка -->
+      <!-- Мобильное меню / Обертка -->
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="page-header__menu-button js-close-menu">
           <svg
@@ -333,6 +333,7 @@
           <ul class="team__list">
             <li class="team__item thumb">
               <img
+                loading="lazy"
                 srcset="
                   ./images/team-section/desktop-igor@1x.jpg 270w,
                   ./images/team-section/tablet-igor@1x.jpg  354w,
@@ -611,7 +612,7 @@
       </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-section__container">
         <div>
           <a href="./index.html" class="footer-section__logo">
@@ -681,7 +682,7 @@
           </button>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <!-- Скрипт -->
     <script src="./js/modal.js"></script>
     <!-- Новый скрипт -->

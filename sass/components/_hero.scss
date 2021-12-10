@@ -1,24 +1,92 @@
 // Герой
 
+// .hero {
+//   position: relative;
+//   background-color: #2f303a;
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url("/images/hero/mobile-hero-1x.jpg");
+//   background-size: cover; // or contaim
+// }
 .hero {
   position: relative;
-  background-color: #2f303a;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 118px;
+  padding-top: 118px;
+  text-align: center;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/Header-img.jpg");
+    url("/images/hero/mobile-hero-1x.jpg");
+  background-color: #2f303a;
+  background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  padding-top: 200px;
-  padding-right: 0;
-  padding-bottom: 200px;
-  padding-left: 0;
+}
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero/mobile-hero-2x.jpg");
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero/tablet-hero-1x.jpg");
+  }
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/hero/tablet-hero-2x.jpg");
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero/desktop-hero-1x.jpg");
+  }
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/hero/desktop-hero-2x.jpg");
+    }
+  }
+}
+
+.hero {
   &__title {
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +109,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
     width: 1200px;
   }
 }
