@@ -2,6 +2,11 @@
 
 .customers {
   margin-top: 0;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .customers {
@@ -31,17 +36,6 @@
   }
 }
 
-// .customers {
-//   &__item {
-//     width: 170px;
-//     height: 92px;
-
-//     &:not(:last-child) {
-//       margin-right: 30px;
-//     }
-//   }
-// }
-
 .customers {
   &__item {
     width: 170px;
@@ -54,10 +48,6 @@
 
     //не встает в два ряда
     @media screen and (max-width: 767px) {
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: center;
-      // flex-basis: 50%;
       width: calc((100% - 4 * 15px) / 2); //формула для расчета ширины
       margin-right: 15px;
     }

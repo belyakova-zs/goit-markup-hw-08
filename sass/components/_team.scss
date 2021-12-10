@@ -19,8 +19,13 @@
 }
 
 .team {
+  padding-bottom: 60px;
   text-align: center;
   background-color: $secondary-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .team {

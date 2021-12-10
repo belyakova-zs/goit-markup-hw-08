@@ -1,100 +1,18 @@
 // Шапка сайта
 
-.nav {
+.page-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-height: 80px;
 }
-
 .page-header {
-  // position: relative; //контент меню под фото hero и его не видно
-
-  &__border {
-    position: relative;
-
-    border-bottom: 1px solid $border-bottom-line;
-  }
+  border-bottom: 1px solid $border-bottom-line;
+  height: 50px;
 
   @media screen and (min-width: 480px) {
-    & {
-      width: 480px;
-    }
+    height: 60px;
   }
 
   @media screen and (min-width: 768px) {
-    & {
-      width: 768px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    & {
-      width: 1200px;
-    }
-  }
-}
-
-.page-header {
-  &__menu-button {
-    // position: absolute;
-
-    // min-width: 480px;
-    // min-height: 796px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-
-    // &.is-open {
-    //   .page-header__icon-cross {
-    //     display: block;
-    //   }
-    // }
-
-    // &.is-open {
-    //   .page-header__icon-menu {
-    //     display: none;
-    //   }
-    // }
-
-    @media screen and (min-width: 767px) {
-      display: none;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-  }
-}
-
-.menu-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  z-index: 999;
-  background-color: palegoldenrod;
-  padding-left: 40px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17em;
-  letter-spacing: 0.02em;
-
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-
-  .is-open {
-    transform: translateX(0);
+    height: 80px;
   }
 }

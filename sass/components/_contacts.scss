@@ -1,30 +1,38 @@
 // Контакты в меню
 
 .contacts {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  align-items: center;
+  display: none;
 
-  &__items {
-    margin-left: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
 
-  @media screen and (min-width: 767px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
   }
 }
 
 .contacts {
   &__link {
-    display: block;
-    padding-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-    padding-left: 30px;
-
-    padding-bottom: 32px;
-    font-style: normal;
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -44,6 +52,10 @@
     border: 0;
     margin-right: 10px;
     fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+    }
   }
 }
 
