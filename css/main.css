@@ -273,11 +273,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-a {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -665,6 +660,8 @@ img {
 
 .mobile-menu__link {
   display: inline-block;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   margin-top: 0;
   font-weight: 500;
   font-size: 20px;
@@ -1939,31 +1936,26 @@ textarea:hover, textarea:focus {
   margin-right: 0;
 }
 
-.service-section {
+.service {
   margin-top: 50px;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.service-section__main {
+.service__main {
   margin-bottom: 30px;
   margin-right: 30px;
   max-width: calc((100%-60px) / 3);
 }
 
-.service-section__main:nth-last-child(-n + 3) {
+.service__main:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.service-section__main:nth-child(3n) {
+.service__main:nth-child(3n) {
   margin-right: 0;
 }
 
-.service-section__card {
+.service__card {
   display: block;
   padding: 0;
   text-decoration: none;
@@ -1973,22 +1965,22 @@ textarea:hover, textarea:focus {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.service-section__card:hover, .service-section__card:focus {
+.service__card:hover, .service__card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.service-section__card:hover .service-section__text {
+.service__card:hover .service__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.service-section__img {
+.service__img {
   position: relative;
   overflow: hidden;
 }
 
-.service-section__text {
+.service__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -2003,7 +1995,7 @@ textarea:hover, textarea:focus {
   transition: transform 255ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 255ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.service-section__text-description {
+.service__text-description {
   padding: 63px 24px 63px 24px;
   margin: 0;
   font-size: 18px;
@@ -2012,13 +2004,13 @@ textarea:hover, textarea:focus {
   color: #ffffff;
 }
 
-.service-section__border {
+.service__border {
   border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px;
 }
 
-.service-section__title {
+.service__title {
   margin-top: 0;
   margin-bottom: 4px;
   color: #212121;
@@ -2028,7 +2020,7 @@ textarea:hover, textarea:focus {
   letter-spacing: 0.06em;
 }
 
-.service-section__description {
+.service__description {
   margin-top: 0;
   margin-bottom: 0;
   color: #757575;
