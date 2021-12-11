@@ -1587,7 +1587,7 @@ textarea:hover, textarea:focus {
   fill: #2196f3;
 }
 
-.footer-section {
+.footer {
   display: block;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1595,7 +1595,7 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-section {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1611,13 +1611,13 @@ textarea:hover, textarea:focus {
   }
 }
 
-.footer-section__container {
+.footer__container {
   display: block;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-section__container {
+  .footer__container {
     width: 768px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1634,7 +1634,7 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section__container {
+  .footer__container {
     width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1650,7 +1650,7 @@ textarea:hover, textarea:focus {
   }
 }
 
-.footer-section__logo {
+.footer__logo {
   color: #2196f3;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -1660,12 +1660,12 @@ textarea:hover, textarea:focus {
   text-decoration: none;
 }
 
-.footer-section__logo--white-text {
+.footer__logo--white-text {
   padding: 0;
   color: #ffffff;
 }
 
-.footer-section__address {
+.footer__address {
   margin-top: 20px;
   padding: 0;
   font-weight: normal;
@@ -1676,15 +1676,15 @@ textarea:hover, textarea:focus {
   letter-spacing: 0.03em;
 }
 
-.footer-section__address-location {
+.footer__address-location {
   margin: 0 0 9px 0;
 }
 
-.footer-section__address-location:not(:last-child) {
+.footer__address-location:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-section__contact {
+.footer__contact {
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -1692,15 +1692,15 @@ textarea:hover, textarea:focus {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-section__contact:not(:last-child) {
+.footer__contact:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-section__contact:hover, .footer-section__contact:focus {
+.footer__contact:hover, .footer__contact:focus {
   color: #f5f4fa;
 }
 
-.footer-section__icons {
+.footer__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1711,18 +1711,18 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section__icons {
+  .footer__icons {
     margin-left: 60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-section .footer-section__icons {
+  .footer .footer__icons {
     margin-left: 165px;
   }
 }
 
-.footer-section__icons-title {
+.footer__icons-title {
   margin-top: 60px;
   margin-bottom: 20px;
   padding: 0;
@@ -1734,12 +1734,12 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section__icons-title {
+  .footer__icons-title {
     margin-bottom: 0;
   }
 }
 
-.footer-section__list {
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1753,7 +1753,7 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section__list {
+  .footer__list {
     margin-top: 23px;
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -1761,11 +1761,11 @@ textarea:hover, textarea:focus {
   }
 }
 
-.footer-section__icons-list:not(:last-child) {
+.footer__icons-list:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-section__icons-link {
+.footer__icons-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1784,18 +1784,18 @@ textarea:hover, textarea:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-section__icons-link:hover, .footer-section__icons-link:focus {
+.footer__icons-link:hover, .footer__icons-link:focus {
   background-color: #2196f3;
 }
 
-.footer-section__icons-img {
+.footer__icons-img {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-section__form {
+  .footer__form {
     margin-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1814,12 +1814,12 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section__form {
+  .footer__form {
     margin-left: auto;
   }
 }
 
-.footer-section__form-title {
+.footer__form-title {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -1830,7 +1830,7 @@ textarea:hover, textarea:focus {
   color: #ffffff;
 }
 
-.footer-section__form-mailing {
+.footer__form-mailing {
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
   width: 358px;
@@ -1844,19 +1844,19 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section__form-mailing {
+  .footer__form-mailing {
     width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
   }
 }
 
-.footer-section__form-mailing:focus {
+.footer__form-mailing:focus {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.footer-section__form-button {
+.footer__form-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1885,21 +1885,12 @@ textarea:hover, textarea:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-section__form-button:hover, .footer-section__form-button:focus {
+.footer__form-button:hover, .footer__form-button:focus {
   background-color: #188ce8;
 }
 
-.footer-section__form-icon {
+.footer__form-icon {
   margin-left: 10px;
-}
-
-.portfolio-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .portfolio-buttons__item {
@@ -1937,22 +1928,66 @@ textarea:hover, textarea:focus {
 }
 
 .service {
+  padding: 0;
   margin-top: 50px;
   margin-bottom: 30px;
 }
 
-.service__main {
+@media screen and (max-width: 767px) {
+  .service {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .service {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 94px;
+  }
+}
+
+.service__item {
+  width: 100%;
+  text-align: left;
   margin-bottom: 30px;
-  margin-right: 30px;
-  max-width: calc((100%-60px) / 3);
 }
 
-.service__main:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .service__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin-right: 15px;
+  }
 }
 
-.service__main:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .service__item {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .service__card {
@@ -1973,6 +2008,24 @@ textarea:hover, textarea:focus {
 .service__card:hover .service__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 480px) {
+  .service {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .service {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    padding: 63px 24px;
+  }
 }
 
 .service__img {
@@ -1996,6 +2049,7 @@ textarea:hover, textarea:focus {
 }
 
 .service__text-description {
+  text-align: left;
   padding: 63px 24px 63px 24px;
   margin: 0;
   font-size: 18px;
@@ -2008,6 +2062,14 @@ textarea:hover, textarea:focus {
   border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .service__border {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .service__title {
