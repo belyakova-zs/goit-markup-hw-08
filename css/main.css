@@ -284,7 +284,6 @@ ul {
 }
 
 img {
-  outline: 1px solid red;
   display: block;
   width: 100%;
   height: auto;
@@ -319,7 +318,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid blue;
 }
 
 @media screen and (min-width: 480px) {
@@ -1067,11 +1065,10 @@ img {
   position: absolute;
 }
 
-.form__checkbox:checked + .form__checkbox__checkmark {
+.form__checkbox:checked + .form__checkmark {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url("/images/icon_check.svg");
-  background-size: contain;
+  background-image: url("/images/svg/icon_check_correct.svg");
   background-origin: border-box;
 }
 

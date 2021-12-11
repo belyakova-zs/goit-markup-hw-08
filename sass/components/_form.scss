@@ -100,25 +100,13 @@
     position: absolute;
   }
 }
-// .form__chekbox:checked+.form__icon-block {
-//     border-color: #2196f3;
-//     background-color: #2196f3;
-//     background-image: url(../images/icon-check.svg);
-//     background-size: contain;
-//     background-origin: border-box;
-// }
 
-.form {
-  &__checkbox {
-    &:checked + &__checkmark {
-      border-color: $accent-color;
-      background-color: $accent-color;
-
-      background-image: url("/images/icon_check.svg");
-      background-size: contain;
-      background-origin: border-box;
-    }
-  }
+.form__checkbox:checked + .form__checkmark {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url("/images/svg/icon_check_correct.svg");
+  // background-size: contain;
+  background-origin: border-box;
 }
 
 .form {

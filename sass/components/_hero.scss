@@ -1,19 +1,9 @@
 // Герой
 
-// .hero {
-//   position: relative;
-//   background-color: #2f303a;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("/images/hero/mobile-hero-1x.jpg");
-//   background-size: cover; // or contaim
-// }
 .hero {
   position: relative;
   max-width: 1600px;
+
   margin: 0 auto;
   padding-bottom: 118px;
   padding-top: 118px;
@@ -26,7 +16,7 @@
     url("/images/hero/mobile-hero-1x.jpg");
   background-color: #2f303a;
   background-position: center;
-  background-size: cover;
+  background-size: cover; // or contain
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
