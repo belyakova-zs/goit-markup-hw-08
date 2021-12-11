@@ -1,12 +1,8 @@
 // Услуги компании
 
 .service {
-  // padding-top: 0;
-  // padding-bottom: 60px;
-  padding: 0;
-
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 0;
+  margin-bottom: 0;
 
   @media screen and (max-width: 767px) {
     width: 480px;
@@ -23,12 +19,13 @@
 
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
   }
 }
 
 .service {
   &__item {
+    flex-grow: 1;
+
     width: 100%;
     text-align: left;
     margin-bottom: 30px;
@@ -74,13 +71,13 @@
   }
 
   @media screen and (min-width: 480px) {
-    padding: 77px 24px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 49px 24px;
+    padding-bottom: 60px;
   }
   @media screen and(min-width:1200px) {
-    padding: 63px 24px;
+    padding-bottom: 94px;
   }
 }
 
@@ -121,10 +118,6 @@
     border: 1px solid #eeeeee;
     border-top: 0;
     padding: 20px 24px;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      flex-grow: 1;
-    }
   }
 }
 

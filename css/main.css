@@ -273,6 +273,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -287,6 +291,7 @@ img {
 }
 
 .section {
+  display: block;
   padding-top: 60px;
 }
 
@@ -684,7 +689,6 @@ img {
 }
 
 .mobile-menu .mobile-menu__link--active {
-  position: relative;
   margin: 0;
   color: #2196f3;
 }
@@ -731,7 +735,7 @@ img {
   }
 }
 
-.menu-contacts .menu-contacts__mail {
+.menu-contacts__mail {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
@@ -740,26 +744,29 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .menu-contacts .menu-contacts__mail {
+  .menu-contacts__mail {
     font-size: 24px;
   }
 }
 
-.menu-contacts .menu-social {
+.menu-social {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 @media screen and (max-width: 479px) {
-  .menu-contacts .menu-social {
+  .menu-social {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.menu-contacts .menu-social__link {
-  display: inline-block;
+.menu-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-social__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -768,30 +775,12 @@ img {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
-  .menu-contacts .menu-social__link {
-    font-size: 18px;
-  }
-}
-
-.menu-contacts .menu-social__item:not(:last-child) {
-  padding-right: 10px;
-}
-
-@media screen and (min-width: 480px) {
-  .menu-contacts .menu-social__item:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-}
-
-.menu-social__item:not(:first-child) {
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 479px) {
-  .menu-social__item:not(:first-child):nth-child(n + 3) {
-    padding-left: 0;
-  }
+.menu-social__link--after::after {
+  content: " ";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-left: 10px;
 }
 
 .hero {
@@ -875,8 +864,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    font-size: 44px;
-    line-height: 1.36;
     width: 1200px;
   }
 }
@@ -923,6 +910,7 @@ img {
 }
 
 .backdrop__modal {
+  max-width: 450px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1893,11 +1881,36 @@ textarea:hover, textarea:focus {
   margin-left: 10px;
 }
 
+.portfolio-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons {
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio-buttons__item {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-bottom: 15px;
   min-width: 73px;
   margin-right: 8px;
   color: #212121;
@@ -1928,9 +1941,8 @@ textarea:hover, textarea:focus {
 }
 
 .service {
-  padding: 0;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1958,11 +1970,13 @@ textarea:hover, textarea:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 94px;
   }
 }
 
 .service__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
   text-align: left;
   margin-bottom: 30px;
@@ -2012,19 +2026,19 @@ textarea:hover, textarea:focus {
 
 @media screen and (min-width: 480px) {
   .service {
-    padding: 77px 24px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .service {
-    padding: 49px 24px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .service {
-    padding: 63px 24px;
+    padding-bottom: 94px;
   }
 }
 
