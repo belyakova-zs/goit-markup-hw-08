@@ -1150,12 +1150,18 @@ textarea:hover, textarea:focus {
 
 .features__text {
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
-  text-align: left;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 767px) {
+  .features__text {
+    text-align: left;
+  }
 }
 
 .features__list {
@@ -1191,7 +1197,7 @@ textarea:hover, textarea:focus {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 767px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
