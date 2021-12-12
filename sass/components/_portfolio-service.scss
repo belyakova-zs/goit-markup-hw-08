@@ -24,7 +24,7 @@
 
 .service {
   &__item {
-    flex-grow: 1;
+    // flex-grow: 1;
 
     width: 100%;
     text-align: left;
@@ -52,7 +52,10 @@
 
 .service {
   &__card {
-    display: block;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+
     padding: 0;
     text-decoration: none;
     transition: box-shadow 250ms $cubic;
@@ -118,6 +121,8 @@
     border: 1px solid #eeeeee;
     border-top: 0;
     padding: 20px 24px;
+
+    flex-grow: 1;
   }
 }
 
