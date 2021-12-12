@@ -836,6 +836,7 @@ img {
 }
 
 .hero__title {
+  font-family: Roboto, sans-serif;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -844,8 +845,15 @@ img {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 @media screen and (min-width: 480px) {
