@@ -326,6 +326,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   overflow-y: hidden;
+  outline: 1px solid blue;
 }
 
 @media screen and (min-width: 480px) {
@@ -830,7 +831,6 @@ img {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/desktop-hero@1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop-hero@1x.jpg");
   }
@@ -1942,35 +1942,23 @@ textarea:hover, textarea:focus {
 }
 
 .service {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 0;
   margin-bottom: 0;
+  outline: 1px solid red;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .service {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .service {
-    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .service {
-    width: 1200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
