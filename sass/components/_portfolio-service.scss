@@ -4,7 +4,7 @@
   padding-top: 0;
   margin-bottom: 0;
 
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -40,7 +40,7 @@
 
 .service {
   &__card {
-    outline: 1px solid green;
+    // outline: 1px solid green;
     height: 100%;
     flex-direction: column;
     display: flex;

@@ -326,7 +326,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   overflow-y: hidden;
-  outline: 1px solid blue;
 }
 
 @media screen and (min-width: 480px) {
