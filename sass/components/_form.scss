@@ -104,7 +104,7 @@
 .form__checkbox:checked + .form__checkmark {
   border-color: $accent-color;
   background-color: $accent-color;
-  background-image: url("/images/svg/icon_check_correct.svg");
+  background-image: url("./images/svg/icon_check_correct.svg");
   // background-size: contain;
   background-origin: border-box;
 }
