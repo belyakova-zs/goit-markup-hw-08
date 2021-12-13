@@ -312,12 +312,20 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  overflow-y: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -853,24 +861,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1600px;
   }
 }
 
