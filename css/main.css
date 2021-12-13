@@ -1821,7 +1821,7 @@ textarea:hover, textarea:focus {
 .footer__form-mailing {
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1943,7 +1943,6 @@ textarea:hover, textarea:focus {
 .service {
   padding-top: 0;
   margin-bottom: 0;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 768px) {
@@ -1985,7 +1984,6 @@ textarea:hover, textarea:focus {
 }
 
 .service__card {
-  outline: 1px solid green;
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
