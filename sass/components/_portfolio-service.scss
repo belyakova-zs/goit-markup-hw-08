@@ -3,8 +3,9 @@
 .service {
   padding-top: 0;
   margin-bottom: 0;
+  max-width: 480px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     width: 480px;
   }
 
