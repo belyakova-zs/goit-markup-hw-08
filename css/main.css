@@ -916,15 +916,21 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .backdrop__modal {
+    max-width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .backdrop__modal {
     position: absolute;
     top: 40%;
     left: 50%;
-    -webkit-transform: translate(-40%, -50%);
-            transform: translate(-40%, -50%);
-    max-width: 450px;
-    width: 100%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 450px;
+    overflow-y: scroll;
   }
 }
 
@@ -961,6 +967,21 @@ img {
   fill: #000000;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .backdrop__close-button {
+    top: 100px;
+    right: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop__close-button {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .backdrop__close-button:hover, .backdrop__close-button:focus {
