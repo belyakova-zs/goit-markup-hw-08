@@ -89,11 +89,11 @@
   }
 }
 
-// .customers-section {
-//   &__link:hover &__icon {
-//     fill: $accent-color;
-//   }
-// }
+.customers {
+  &__link:hover &__icon {
+    fill: $accent-color;
+  }
+}
 
 .customers {
   &__icon {
