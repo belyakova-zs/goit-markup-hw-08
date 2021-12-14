@@ -1065,7 +1065,7 @@ img {
 .form__checkbox:checked + .form__checkmark {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url("./images/svg/icon_check_correct.svg");
+  background-image: url("../images/svg/icon_check_correct.svg");
   background-origin: border-box;
 }
 
